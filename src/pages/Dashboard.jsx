@@ -30,7 +30,7 @@ function Dashboard() {
 
         const data = await getNews(category);
         setNews(data || []);
-      } catch (err) {
+      } catch {
         setNews([]);
         setNewsError("Failed to load news.");
       } finally {
