@@ -19,7 +19,7 @@ function NewsFilter({ category, setCategory }) {
         <button
           key={cat}
           onClick={() => setCategory(cat)}
-          className={`px-4 py-2 rounded-lg border transition ${
+          className={`px-4 py-2 rounded-lg border transition capitalize ${
             category === cat
               ? "bg-blue-600 text-white"
               : theme === "dark"

@@ -7,14 +7,17 @@ function WeatherSearch({ onSearch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!city.trim()) return;
 
     onSearch(city);
-    // Removed setCity("") so the text stays in the box while viewing results
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-3">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col sm:flex-row gap-3"
+    >
       <input
         type="text"
         placeholder="Search city... (e.g., Hyderabad)"
@@ -29,7 +32,7 @@ function WeatherSearch({ onSearch }) {
 
       <button
         type="submit"
-        className="bg-blue-600 text-white px-6 rounded-lg hover:bg-blue-700 transition-colors"
+        className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
       >
         Search
       </button>

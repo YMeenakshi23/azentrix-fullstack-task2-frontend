@@ -6,14 +6,14 @@ function WeatherCard({ weather }) {
 
   return (
     <div
-      className={`rounded-2xl shadow-lg p-6 ${
+      className={`rounded-2xl shadow-lg p-4 md:p-6 ${
         theme === "dark"
           ? "bg-slate-800 text-white"
           : "bg-white text-black"
       }`}
     >
-      <div className="flex items-center justify-between">
-        <div>
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-center sm:text-left">
           <h2 className="text-2xl font-bold">
             {weather.name}
           </h2>
@@ -30,11 +30,11 @@ function WeatherCard({ weather }) {
         />
       </div>
 
-      <p className="text-6xl font-bold my-6">
+      <p className="text-4xl md:text-6xl font-bold my-6 text-center sm:text-left">
         {Math.round(weather.main.temp)}°C
       </p>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div
           className={`p-4 rounded-xl ${
             theme === "dark"

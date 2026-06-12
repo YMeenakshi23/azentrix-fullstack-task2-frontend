@@ -43,7 +43,7 @@ function Dashboard() {
 
   return (
     <div
-      className={`min-h-screen p-6 transition-all duration-300 ${
+      className={`min-h-screen p-4 md:p-6 transition-all duration-300 ${
         theme === "dark"
           ? "bg-slate-900 text-white"
           : "bg-slate-100 text-black"
@@ -52,8 +52,8 @@ function Dashboard() {
       <div className="max-w-6xl mx-auto">
 
         {/* HEADER */}
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-4xl font-bold">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
+          <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
             🌤 Weather + News Dashboard
           </h1>
 
@@ -65,7 +65,7 @@ function Dashboard() {
                 : "bg-black text-white"
             }`}
           >
-            Toggle Theme
+            {theme === "dark" ? "☀ Light Mode" : "🌙 Dark Mode"}
           </button>
         </div>
 
@@ -104,8 +104,8 @@ function Dashboard() {
           ) : news.length === 0 ? (
             <p>No news found</p>
           ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-              {news.map((article, i) => (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                {news.map((article, i) => (
                 <NewsCard key={i} article={article} />
               ))}
             </div>
