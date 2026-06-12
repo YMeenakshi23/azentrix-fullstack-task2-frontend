@@ -86,12 +86,27 @@ npm run dev
 
 ## 🖼 Screenshots
 
-| Page | Screenshot |
-|--------|------------|
-| 🏠 Home Page | `./src/assets/screenshots/home.png` |
-| 🌤 Weather Section | `./src/assets/screenshots/weather.png` |
-| 📰 News Section | `./src/assets/screenshots/news.png` |
-| 🌙 Dark Mode | `./src/assets/screenshots/dark.png` |
+### 🏠 Home Page
+
+![Home Page](./src/assets/screenshots/home.png)
+
+---
+
+### 🌤 Weather Section
+
+![Weather Section](./src/assets/screenshots/weather.png)
+
+---
+
+### 📰 News Section
+
+![News Section](./src/assets/screenshots/news.png)
+
+---
+
+### 🌙 Dark Mode
+
+![Dark Mode](./src/assets/screenshots/dark.png)
 
 ---
 
@@ -118,8 +133,8 @@ npm run dev
 
 **Y Meenakshi**
 
-- GitHub: `https://github.com/your-github-username`
-- LinkedIn: `https://linkedin.com/in/your-linkedin-profile`
+- GitHub: `https://github.com/YMeenakshi23`
+- LinkedIn: `https://linkedin.com/in/meenakshi-yakkala`
 
 ---
 
